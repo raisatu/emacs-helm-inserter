@@ -49,7 +49,7 @@ each value is a value that will be inserted at the point."
   "Run helm inserter."
   (interactive)
   (let* ((candidates emacs-helm-inserter-candidates)
-         (source `((name . "baka")
+         (source `((name . "Emacs helm inserter")
                    (candidates . ,(mapcar #'first candidates))
                    (action . (lambda (candidate)
                                (insert (cdr (assoc candidate
